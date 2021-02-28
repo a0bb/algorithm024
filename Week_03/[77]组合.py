@@ -7,6 +7,7 @@ class Solution:
         res = []
         if k <= 0 or n < k:
             return res
+        # path 栈
         path = collections.deque()
         self._dfs(n, k, 1, path, res)
         return res
